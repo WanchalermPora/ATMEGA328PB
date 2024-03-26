@@ -1,0 +1,10 @@
+bit_processor.sv
+avr_core2.sv
+io_adr_dec2.sv
+io_reg_file2.sv
+pm_fetch_dec3.sv
+pm_fetch_dec_old.sv
+reg_file.sv
+
+sram.v
+SRAM_2.v
