@@ -1,5 +1,0 @@
-avr_adr_pack.vh
-bit_def_pack.vh
-synth_ctrl_pack.vh
-tech_def_pack.vh
-timescale.vh
