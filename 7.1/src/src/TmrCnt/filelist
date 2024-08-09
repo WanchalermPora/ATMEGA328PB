@@ -1,0 +1,10 @@
+
+mux_after_prescaler0.v
+prescaler0.v
+prescaler1.v
+prescaler_reset.v
+synchronizer.v
+Timer_Counter.v
+Timer_Counter0_8_bit.v
+Timer_Counter2_8_bit.v
+Timer_Counter_16_bit.v

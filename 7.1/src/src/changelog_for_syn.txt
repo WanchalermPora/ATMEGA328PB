@@ -1,0 +1,50 @@
+5/12/2024 :
+	rg.md:
+		 comment line 42, 54 - 58, 60
+	SPI_0:
+		line 142 146 149 160 from = to <=
+	SPI_1:
+		line 142 146 149 160 from = to <=
+	USART/FIFO:
+		comment line 112 - 115, 117 - 118
+		line 87 89 from = to <=
+	USART/USARTn:
+		from = to <= :
+			line 178 182 185
+			line 548 - 608 
+			line 801 - 869
+	TWI:
+		add TWSRn[2:0] <= {3{1'b0}}; to line 169
+		comment line 41 - 46 (initialization) 
+		add line 48 - 53
+		comment line 2016 add TWAMRn <= {8{1'b0}}; to line 2017
+		fix line 67
+		line 1054 1056 from = to <= :
+		line : assign clk_div 6->7 , 4->, 2->3  at { after +
+	prescaler_0:
+		fix line 13 : reg [9:0] counter = 10'b0000000000;
+	mux_after_prescaler_0:
+		cp2 to clk:
+			line 63 72 81 90
+		tnx to tx:
+			line 64 73 82 91
+		tnx_sync to tx_sync
+			line 64 73 82 91
+	ATmega_top:
+		add: wire jtag_cp2en;
+		add: wire core_insert_nop;
+		add: wire core_block_irq;
+		add: wire [7:0]	dbus_out;
+		add: wire [10:0]	ram_Addr;
+		add: wire SPI1_SL_OUT
+	prescaler_1:
+		fix line 16 : reg [9:0] counter = 10'b0000000000;
+	Timer_0:
+		fix line 85
+		add initial block for others bit of TIFRn at 606
+	Timer_16_bit:
+		fix line 105
+		add initial block for others bit of TIFRn at 735
+	Timer_2:
+		fix line 96
+		add initial block for others bit of TIFRn at 724
